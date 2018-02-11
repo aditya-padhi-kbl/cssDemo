@@ -16,6 +16,7 @@ gulp.task('minify-css', () => {
 });
 
 gulp.task('copy-icons', function() {
+	console.log(__dirname);
     return gulp.src('node_modules/font-awesome/fonts/**.*')
-        .pipe(gulp.dest('app/css/font-awesome/fonts'));
+        .pipe(gulp.dest('font-awesome/fonts'));
 });
