@@ -20,3 +20,5 @@ gulp.task('copy-icons', function() {
     return gulp.src('node_modules/font-awesome/fonts/**.*')
         .pipe(gulp.dest('font-awesome/fonts'));
 });
+
+gulp.task('default', gulp.series('minify-css', 'copy-icons'));
